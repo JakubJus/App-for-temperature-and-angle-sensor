@@ -54,9 +54,11 @@ void loop() {
                 float gyroX = myIMU.readFloatGyroX();
                 float gyroY = myIMU.readFloatGyroY();
                 float gyroZ = myIMU.readFloatGyroZ();
+                float temp = myIMU.readTempC();
                 // Format the data as a comma-separated string
                 String imuData = String(accelX) + "," + String(accelY) + "," + String(accelZ) + ","
-                                 + String(gyroX) + "," + String(gyroY) + "," + String(gyroZ);
+                                 + String(gyroX) + "," + String(gyroY) + "," + String(gyroZ) + ","
+                                 + String(temp);
                 //Serial.println(imuData);
                 imuDataCharacteristic.writeValue(imuData.c_str());// Send data as string over BLE
             }
