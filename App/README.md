@@ -37,4 +37,4 @@ This Android app connects to a Bluetooth Low Energy (BLE) IMU device (like the S
 
 ```bash
 git clone https://github.com/JakubJus/App-for-temperature-and-angle-sensor/tree/main/App.git
-cd imu-measurement-app
+cd newble
