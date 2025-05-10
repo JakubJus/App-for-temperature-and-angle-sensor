@@ -54,15 +54,14 @@ To set up the **Android app**, visit the [`app/`](app/) folder and follow the in
 ## 🧪 Sensor Output Example
 
 ```
-0.01,0.02,9.81,0.05,0.00,0.01
-accelX,accelY,accelZ,gyroX,gyroY,gyroZ
+0.01,0.02,9.81,0.05,0.00,0.01,27,8
+accelX,accelY,accelZ,gyroX,gyroY,gyroZ,temp
 ```
 
 ---
 
 ## 🛠️ Future Work
 
-- Add temperature measurement & display
 - Improve user profile section in the app
 - Export session as CSV or PDF
 - Orientation or tilt visualizer
