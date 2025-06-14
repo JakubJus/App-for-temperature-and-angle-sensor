@@ -1,4 +1,4 @@
-# App-and-hardware-for-temperature-and-angle-sensor
+# Integrated Sensor & Scheduler App
 
 This project consists of two components:
 
@@ -6,7 +6,7 @@ This project consists of two components:
    Arduino-based firmware running on a **Seeed Studio XIAO nRF52840 Sense** that measures **temperature, acceleration, and gyroscope data**, and transmits it via **Bluetooth Low Energy (BLE)**.
 
 2. 📱 **Android App (Software)**  
-   An Android application built with **Jetpack Compose** that connects to the BLE device, visualizes sensor data in real-time, and saves sessions to **Firebase** for later viewing.
+   An Android application built with **Jetpack Compose** that connects to the BLE device, visualizes sensor data in real-time, and saves sessions to **Firebase** for later viewing. The application works also as an scheduler to plan an activity.
 
 ---
 
@@ -36,7 +36,9 @@ To set up the **BLE sensor firmware**, visit the [`sensor/`](sensor/) folder and
 To set up the **Android app**, visit the [`app/`](app/) folder and follow the instructions in the [`README.md`](app/README.md).
 
 - Connect to the BLE device
-- View real-time graphs
+- View real-time graphs activity
+- Add new activity to schedule
+- Remove activity from schedule
 - Save data to Firebase
 - View historical sessions and plan future ones
 
